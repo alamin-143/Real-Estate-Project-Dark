@@ -1,0 +1,107 @@
+.feature__area {
+    background: #1A2231;
+    padding: 80px 0px;
+    &--wrapper {
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+        .feature__box {
+            border-radius: 4px;
+            background: #161E2A;
+            box-shadow: 0px 2px 2px 0px rgba(217, 222, 232, 0.18);
+            padding: 15px 0px 24px 0px;
+            &--icon {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 6px;
+            }
+            &--title {
+                color: #E2E7EE;
+                font-size: 38px;
+                font-weight: 700;
+                line-height: normal;
+                padding-bottom: 4px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: 32px;
+                    height: 2px;
+                    background: rgba(42, 50, 60, 0.25);
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            &--text {
+                color: #A9B3C0;
+                font-size: 18px;
+                margin-top: 9px;
+            }
+            &--bottom {
+                right: 0;
+                bottom: 0;
+                // transform: rotate(-45deg); 
+                height: 108px;
+                width: 108px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .feature__area {
+        &--wrapper {
+            .feature__box {
+                &--title {
+                    font-size: 30px;
+                }
+                &--bottom {
+                    height: 90px;
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .feature__area {
+        &--wrapper {
+            .feature__box {
+                &--bottom {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .feature__area {
+        &--wrapper {
+            grid-template-columns: 1fr 1fr;
+            .feature__box {
+                &--bottom {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .feature__area {
+        padding: 50px 0px;
+        &--wrapper {
+            grid-template-columns: 1fr;
+            .feature__box {
+                &--bottom {
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}

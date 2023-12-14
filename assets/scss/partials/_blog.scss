@@ -1,0 +1,178 @@
+.blog__area {
+    padding: 80px 0px 66px 0px;
+    background: #1A2231;
+    &--title {
+        @include section__title;
+    }
+    &--wrapper {
+        .owl-stage-outer {
+            padding: 102px 0px 50px 0px;
+            overflow: visible;
+            .owl-item {
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s;
+            }
+            .owl-item.active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .owl-nav {
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+            .owl-prev,.owl-next {
+                width: 46px;
+                height: 46px;
+                i {
+                    color: $primary__color;
+                    opacity: .5;
+                    transition: all .3s;
+                    font-size: 30px;
+                }
+                &:hover {
+                    i {
+                        opacity: 1;
+                    }
+                   
+                }
+            }
+        }
+        .blog {
+            border-radius: 4px;
+            background: #161E2A;
+            box-shadow: 0px 2px 2px 0px rgba(217, 222, 232, 0.18);
+            padding: 24px;
+            &__photo {
+                filter: drop-shadow(0px 5px 10px rgba(7, 21, 42, 0.12));
+                border-radius: 4px;
+                &--img {
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: all .3s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            &__desc {
+                padding-top: 20px;
+                &--title {
+                    color: #E2E7EE;
+                    font-size: 17px;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                .sale__btn {
+                    width: 65px;
+                    height: 18px;
+                    border-radius: 3px;
+                    background: rgba(76, 182, 170, 0.15);
+                    box-shadow: 0px 2px 2px 0px rgba(19, 105, 95, 0.20);
+                    color: #4CB6AA;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+                &--address {
+                    gap: 7px;
+                    padding: 8px 0px 12px 0px;
+                    img {
+                        width: 18px;
+                    }
+                    span {
+                        color: #A9B3C0;
+                        font-size: 14px;
+                        line-height: normal; 
+                    }
+                }
+                &--rating {
+                    .rating__icon {
+                        gap: 4px;
+                    }
+                    .price {
+                        color: #E2E7EE;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width: 1200px) and (max-width: 1399px) {
+    .blog__area {
+        &--wrapper {
+            .blog {
+                padding: 15px;
+                &__desc {
+                    &--title {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width: 992px) and (max-width: 1199px) {
+    .blog__area {
+        padding: 60px 0px 50px 0px;
+        &--wrapper {
+            .owl-stage-outer {
+                padding: 70px 0px 50px 0px;
+            }
+            .blog {
+                padding: 15px;
+                &__desc {
+                    &--title {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 991px) {
+    .blog__area {
+        padding: 50px 0px 40px 0px;
+        &--wrapper {
+            .owl-stage-outer {
+                padding: 50px 0px 30px 0px;
+            }
+            .blog {
+                padding: 15px;
+                &__desc {
+                    &--title {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media  (min-width: 320px) and (max-width: 767px) {
+    .blog__area {
+        padding: 40px 0px 30px 0px;
+        &--title {
+            font-size: 25px;
+        }
+        &--wrapper {
+            .owl-stage-outer {
+                padding: 40px 0px 20px 0px;
+            }
+            .blog {
+                padding: 15px;
+                &__desc {
+                    &--title {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

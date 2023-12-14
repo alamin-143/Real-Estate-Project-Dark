@@ -1,0 +1,51 @@
+// theme btn
+@mixin theme__btn() {
+    border-radius: 4px;
+    padding: 7px 20px;
+    font-size: 16px;
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+}
+@mixin section__title() {
+    color: $primary__color;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 8px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 250px;
+        background: url('../img/title__border.png');
+    }
+    span {
+        color: #E8EBF1; 
+    }
+}
+
+@mixin section__title__lg () {
+    color: $secondary__color;
+    font-size: 40px;
+    font-weight: 700;
+    span {
+        color: $primary__color;
+    }
+}
+@mixin para__style() {
+    color: #A9B3C0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    @mixin section__title() {
+        font-size: 25px !important;
+    }
+    @mixin section__title__lg () {
+        font-size: 30px !important;
+    }
+}

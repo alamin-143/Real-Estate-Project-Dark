@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="assets/css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+
+    <!-- for font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,500;1,700&display=swap" rel="stylesheet">
+
+    <title>Real Estate Project</title>
+</head>
+
+<body>
+
+   <!-- header area start here -->
+   <header class="header__area">
+        <div class="menu__area">
+            <div class="container">
+                <div class="menu__wrapper d-flex align-items-center justify-content-between">
+                    <a href="#" class="logo"><img src="assets/img/Homeey-logo-dark.png" alt="site logo"></a>
+                    <ul class="menu d-none d-lg-flex align-items-center mb-0 ps-0">
+                        <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Home</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Property</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">About</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Review</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Blog</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Contact</a></li>
+                    </ul>
+                    <div class="menu__btn d-none d-lg-flex align-items-center">
+                        <a class="menu__btn--link menu__btn--signin text-decoration-none" href="#">Sign in</a>
+                        <a class="menu__btn--link menu__btn--signup text-decoration-none" href="#">Sign up</a>
+                    </div>
+                    <a class="menu__open d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="fal fa-bars"></i>
+                    </a>  
+                    <!-- offcanvas menu start here -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header justify-content-end">
+                            <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="menu d-flex flex-column mb-0 ps-0">
+                                <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Home</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Property</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">About</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Review</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Blog</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link text-decoration-none position-relative">Contact</a></li>
+                            </ul>
+                            <div class="menu__btn d-flex flex-column">
+                                <a class="menu__btn--link menu__btn--signin text-decoration-none" href="#">Sign in</a>
+                                <a class="menu__btn--link menu__btn--signup text-decoration-none" href="#">Sign up</a>
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- offcanvas menu end here -->
+                </div>
+            </div>
+        </div>
+        <div class="hero__area">
+            <div class="container">
+                <div class="hero__area--wrapper position-relative" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="hero__desc position-relative z-1">
+                        <span class="hero__desc--top d-inline-block">A Vision for Your Life</span>
+                        <h1 class="hero__desc--title">Find Your Best <br> <span>Real Estate</span></h1>
+                        <p class="hero__desc--text">Nemo enim ipsam voluptatem quia voluptas sit aspernat odit aut fugit, sed quia consequuntur magni dolores qui ratione sequi nesciunt.</p>
+                    </div>
+                    <div class="hero__btn__tab position-relative z-1">
+                        <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Buy</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sell</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Rent</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active hero__btn__tab--content" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="poperty__search d-flex align-items-center">
+                                    <div class="select__box">
+                                        <select class="form-select" title="location">
+                                            <option value="Location">Location</option>
+                                            <option value="Location">Bangladesh</option>
+                                            <option value="Location">Pakistan</option>
+                                            <option value="Location">United States</option>
+                                            <option value="Location">France</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="far fa-map-marker-alt"></i></span>
+                                    </div>
+                                    <div class="select__box">
+                                        <select class="form-select" title="property">
+                                            <option value="property">Property</option>
+                                            <option value="property">House</option>
+                                            <option value="property">Flat</option>
+                                            <option value="property">United States</option>
+                                            <option value="property">France</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="fas fa-home"></i></span>
+                                    </div>
+                                    <div class="select__box">
+                                        <select class="form-select" title="Price">
+                                            <option value="Price">Price</option>
+                                            <option value="Price">1 cr</option>
+                                            <option value="Price">2 cr</option>
+                                            <option value="Price">3 cr</option>
+                                            <option value="Price">4 cr</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="far fa-dollar-sign"></i></span>
+                                    </div>
+                                    <button type="submit" class="poperty__search--btn d-flex align-items-center justify-content-center"><span><i class="far fa-search"></i></span> Search</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade hero__btn__tab--content" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="poperty__search d-flex align-items-center">
+                                    <div class="select__box">
+                                        <select class="form-select" title="location">
+                                            <option value="Location">Location</option>
+                                            <option value="Location">Bangladesh</option>
+                                            <option value="Location">Pakistan</option>
+                                            <option value="Location">United States</option>
+                                            <option value="Location">France</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="far fa-map-marker-alt"></i></span>
+                                    </div>
+                                    <div class="select__box">
+                                        <select class="form-select" title="property">
+                                            <option value="property">Property</option>
+                                            <option value="property">House</option>
+                                            <option value="property">Flat</option>
+                                            <option value="property">United States</option>
+                                            <option value="property">France</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="fas fa-home"></i></span>
+                                    </div>
+                                    <div class="select__box">
+                                        <select class="form-select" title="Price">
+                                            <option value="Price">Price</option>
+                                            <option value="Price">1 cr</option>
+                                            <option value="Price">2 cr</option>
+                                            <option value="Price">3 cr</option>
+                                            <option value="Price">4 cr</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="far fa-dollar-sign"></i></span>
+                                    </div>
+                                    <button type="submit" class="poperty__search--btn d-flex align-items-center justify-content-center"><span><i class="far fa-search"></i></span> Search</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade hero__btn__tab--content" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                                <div class="poperty__search d-flex align-items-center">
+                                    <div class="select__box">
+                                        <select class="form-select" title="location">
+                                            <option value="Location">Location</option>
+                                            <option value="Location">Bangladesh</option>
+                                            <option value="Location">Pakistan</option>
+                                            <option value="Location">United States</option>
+                                            <option value="Location">France</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="far fa-map-marker-alt"></i></span>
+                                    </div>
+                                    <div class="select__box">
+                                        <select class="form-select" title="property">
+                                            <option value="property">Property</option>
+                                            <option value="property">House</option>
+                                            <option value="property">Flat</option>
+                                            <option value="property">United States</option>
+                                            <option value="property">France</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="fas fa-home"></i></span>
+                                    </div>
+                                    <div class="select__box">
+                                        <select class="form-select" title="Price">
+                                            <option value="Price">Price</option>
+                                            <option value="Price">1 cr</option>
+                                            <option value="Price">2 cr</option>
+                                            <option value="Price">3 cr</option>
+                                            <option value="Price">4 cr</option>
+                                        </select>
+                                        <span class="select__box--icon position-absolute d-flex align-items-center justify-content-center"><i class="far fa-dollar-sign"></i></span>
+                                    </div>
+                                    <button type="submit" class="poperty__search--btn d-flex align-items-center justify-content-center"><span><i class="far fa-search"></i></span> Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+   <!-- header area end here -->
+
+   <!-- property type area start here -->
+   <div class="property__type__area">
+        <div class="container">
+            <div class="property__type--wrapper">
+                <h2 class="property__type--title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">Property <span>Types</span></h2>
+                <div class="propert__type--slide owl-carousel" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/house.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Private House</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/apartment.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Apartment</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/hotel.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Exclusive Hotel</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/room.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Private Room</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/warehouse.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Warehouse</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/house.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Private House</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/apartment.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Apartment</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/hotel.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Exclusive Hotel</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                    <div class="property__type text-center">
+                        <div class="property__type--photo mx-auto d-flex align-items-center justify-content-center">
+                            <img src="assets/img/property/room.png" alt="property">
+                        </div>
+                        <div class="property__type--desc">
+                            <h3 class="property__name">Private Room</h3>
+                            <a href="#" class="list__btn text-decoration-none d-inline-block">360 Listing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- property type area end here -->
+
+   <!-- property area start here -->
+   <div class="property__area">
+        <div class="container">
+            <h2 class="property__area--title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">Popular <span>Property Deals</span></h2>
+            <div class="property__wrapper d-grid">
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-1.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">The Most Luxarious House</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-2.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">Flint Hill Luxarious House</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="250">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-3.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">The Skay View Farm House</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="350">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-4.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">Modern Capital House</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="450">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-5.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">A Modern Accentuates House</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="550">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-6.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">Spacious & Warm Flat</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="650">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-7.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">Orchard Farm House</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="property" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="750">
+                    <div class="property__thumb position-relative overflow-hidden">
+                        <img class="property__thumb--img w-100 h-100" src="assets/img/property/p-img-8.png" alt="property thumb">
+                        <div class="property__thumb--btn d-flex justify-content-between align-items-start position-absolute w-100 top-0">
+                            <a href="#" class="sale__btn text-decoration-none d-inline-block">For Sale</a>
+                            <a href="#" class="like__btn d-flex align-items-center justify-content-center text-decoration-none"><i class="fas fa-heart"></i></a>
+                        </div>
+                    </div>
+                    <div class="property__desc">
+                        <h3 class="property__desc--title">Perum Kencana asri Flat</h3>
+                        <div class="property__address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map pin">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="property__feature d-flex align-items-center justify-content-between">
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/bed-king-outline.svg" alt="bed icon">
+                                <span>3 Bedroom</span>
+                            </div>
+                            <div class="dot"></div>
+                            <div class="single__feature d-inline-flex align-items-center">
+                                <img src="assets/img/shower.svg" alt="shower icon">
+                                <span>2 Bathroom</span>
+                            </div>
+                        </div>
+                        <div class="property__desc--bottom d-flex align-items-center justify-content-between">
+                            <h4 class="propery__prize">$1,560/ <span>Night</span></h4>
+                            <a href="#" class="property__desc--btn text text-decoration-none">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="property__area--btn text-decoration-none d-inline-block position-relative" >View More <i class="far fa-long-arrow-alt-right"></i></a>
+        </div>
+   </div>
+   <!-- property area end here -->
+
+   <!-- about area start here -->
+   <div class="about__area overflow-hidden">
+        <div class="container">
+            <h2 class="about__area--title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">About <span>Us</span></h2>
+            <div class="about__widget">
+                <div class="single__widget about__trust d-flex flex-column flex-lg-row justify-content-between">
+                    <div class="single__widget--thumb position-relative flex-shrink-0" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="50">
+                        <div class="thumb__photo position-relative">
+                            <img class="thumb__photo--img w-100" src="assets/img/about-img.png" alt="about thumb">
+                        </div>
+                        <img class="circle__effect position-absolute" src="assets/img/circle-effect.png" alt="circle-effect">
+                    </div> 
+                    <div class="single__widget--desc" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+                        <h2 class="single__widget--title">We Are The Best And Trusted <span>Real Estate</span> Agent</h2>
+                        <p class="single__widget--text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                        <p class="single__widget--text">Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                        <div class="single__widget--question accordion d-flex flex-column" id="accordionExample">
+                            <div class="single__question d-flex align-items-start">
+                                <div class="check__circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                    <img class="check__circle--icon flex-shrink-0" src="assets/img/checkbox.png" alt="check icon">
+                                </div>
+                                <div class="accordion-item flex-grow-1">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Sed ut perspiciatis unde omnis ?
+                                    </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione voluptatem sequi nesciunt.
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single__question d-flex align-items-start">
+                                <div class="check__circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                    <img class="check__circle--icon flex-shrink-0" src="assets/img/checkbox.png" alt="check icon">
+                                </div>
+                                <div class="accordion-item flex-grow-1">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Quis autem vel eum iure reprehenderit ?
+                                    </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione voluptatem sequi nesciunt.
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single__question d-flex align-items-start">
+                                <div class="check__circle d-flex align-items-center justify-content-center  flex-shrink-0">
+                                    <img class="check__circle--icon  flex-shrink-0" src="assets/img/checkbox.png" alt="check icon">
+                                </div>
+                                <div class="accordion-item flex-grow-1">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Sed ut perspiciatis unde omnis..?
+                                    </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores ratione voluptatem sequi nesciunt.
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="single__widget about__deal d-flex flex-column flex-lg-row justify-content-between">
+                    <div class="single__widget--desc ps-0" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+                        <h2 class="single__widget--title">We Are Offernig The Best <span> Real Estate</span> Deals</h2>
+                        <p class="single__widget--text">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+                        <p class="single__widget--text">Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                        <ul class="about__deal--list ps-0 d-flex flex-column">
+                            <li class="list__item d-inline-flex"><span class="d-flex align-items-center justify-content-center list__icon"><i class="far fa-long-arrow-alt-right"></i></span>A building with only one room and typically a steep pointy roof.</li>
+                            <li class="list__item d-inline-flex"><span class="d-flex align-items-center justify-content-center list__icon"><i class="far fa-long-arrow-alt-right"></i></span>A vehicle on wheels that has a permanent residence attached to it.</li>
+                            <li class="list__item d-inline-flex"><span class="d-flex align-items-center justify-content-center list__icon"><i class="far fa-long-arrow-alt-right"></i></span>Performing financial analysis and valuation of properties.</li>
+                            <li class="list__item d-inline-flex"><span class="d-flex align-items-center justify-content-center list__icon"><i class="far fa-long-arrow-alt-right"></i></span>Someone who examines buildings and works with appraisers.</li>
+                            <li class="list__item d-inline-flex"><span class="d-flex align-items-center justify-content-center list__icon"><i class="far fa-long-arrow-alt-right"></i></span>A dwelling typically made of raw materials such as bamboo, mud, and clay.</li>
+                        </ul>
+                        <a href="#" class="about__desc--btn text-decoration-none d-inline-block">View More</a>
+                    </div>
+                    <div class="single__widget--thumb position-relative flex-shrink-0"data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="50">
+                        <div class="thumb__photo position-relative">
+                            <img class="thumb__photo--img w-100" src="assets/img/about-img-2.jpg" alt="about thumb">
+                        </div>
+                        <img class="circle__effect position-absolute" src="assets/img/circle-effect.png" alt="circle-effect">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- about area end here -->
+
+   <!-- feature area start here -->
+   <div class="feature__area">
+        <div class="container">
+            <div class="feature__area--wrapper d-grid">
+                <div class="feature__box text-center position-relative" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+                    <div class="feature__box--icon d-flex align-items-center justify-content-center mx-auto">
+                        <img src="assets/img/feature/crown.png" alt="crown icon">
+                    </div>
+                    <h3 class="feature__box--title position-relative mb-0">10.5<span>k</span></h3>
+                    <p class="feature__box--text mb-0">Premium Property</p>
+                    <img class="feature__box--bottom position-absolute " src="assets/img/feature/crown-bg.png" alt="feature box bottom">
+                </div>
+                <div class="feature__box text-center position-relative" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+                    <div class="feature__box--icon d-flex align-items-center justify-content-center mx-auto">
+                        <img src="assets/img/feature/smile.png" alt="smile icon">
+                    </div>
+                    <h3 class="feature__box--title position-relative mb-0">8600<span>+</span></h3>
+                    <p class="feature__box--text mb-0">Happy Customer</p>
+                    <img class="feature__box--bottom position-absolute " src="assets/img/feature/smile-bg.png" alt="feature box bottom">
+                </div>
+                <div class="feature__box text-center position-relative" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="250">
+                    <div class="feature__box--icon d-flex align-items-center justify-content-center mx-auto">
+                        <img src="assets/img/feature/cup.png" alt="cup icon">
+                    </div>
+                    <h3 class="feature__box--title position-relative mb-0">1200</h3>
+                    <p class="feature__box--text mb-0">Award Winning</p>
+                    <img class="feature__box--bottom position-absolute " src="assets/img/feature/cup-bg.png" alt="feature box bottom">
+                </div>
+                <div class="feature__box text-center position-relative" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="350">
+                    <div class="feature__box--icon d-flex align-items-center justify-content-center mx-auto">
+                        <img src="assets/img/feature/home.png" alt="crown icon">
+                    </div>
+                    <h3 class="feature__box--title position-relative mb-0">750</h3>
+                    <p class="feature__box--text mb-0">Years Experience</p>
+                    <img class="feature__box--bottom position-absolute " src="assets/img/feature/home-bg.png" alt="feature box bottom">
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- feature area end here -->
+
+   <!-- testimonial area start here -->
+   <div class="testimonial__area overflow-hidden">
+        <div class="container">
+            <h2 class="testimonial__area--title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50"><span>What Our</span> Client Says</h2>
+            <div class="testimonial__area--wrapper owl-carousel" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-1.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Maecenas as odio ante tincidunt tempu donec vitae sapien ut libero venena faucibus nullam quis ante etiam a amet orci eget eros faucibus tincidunt.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Christopher J. Larson</h4>
+                            <span class="designation">Service Manager</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-2.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Derrick P. Boudreaux</h4>
+                            <span class="designation">Web Developer</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo  position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-3.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Cras ultricies a turpis hendrerit fringilla vestibulum ante ipsum primis faucibus orci luctus et ultrices posuere In ac consectetuer lacinia.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Stanley S. Nesbitt</h4>
+                            <span class="designation">Company Founder</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-1.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Maecenas as odio ante tincidunt tempu donec vitae sapien ut libero venena faucibus nullam quis ante etiam a amet orci eget eros faucibus tincidunt.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Christopher J. Larson</h4>
+                            <span class="designation">Service Manager</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-2.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Derrick P. Boudreaux</h4>
+                            <span class="designation">Web Developer</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-3.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Cras ultricies a turpis hendrerit fringilla vestibulum ante ipsum primis faucibus orci luctus et ultrices posuere In ac consectetuer lacinia.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Stanley S. Nesbitt</h4>
+                            <span class="designation">Company Founder</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-1.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Maecenas as odio ante tincidunt tempu donec vitae sapien ut libero venena faucibus nullam quis ante etiam a amet orci eget eros faucibus tincidunt.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Christopher J. Larson</h4>
+                            <span class="designation">Service Manager</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-2.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Derrick P. Boudreaux</h4>
+                            <span class="designation">Web Developer</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+                <div class="testimonial position-relative">
+                    <div class="testimonial__photo position-relative rounded-circle">
+                        <img class="rounded-circle w-100" src="assets/img/client/client-img-3.png" alt="client img">
+                    </div>
+                    <p class="testimonial__text mb-0">Cras ultricies a turpis hendrerit fringilla vestibulum ante ipsum primis faucibus orci luctus et ultrices posuere In ac consectetuer lacinia.</p>
+                    <div class="testimonial__bottom d-flex align-items-center justify-content-between">
+                        <div class="client__info">
+                            <h4 class="client__name">Stanley S. Nesbitt</h4>
+                            <span class="designation">Company Founder</span>
+                        </div>
+                        <div class="client__review d-flex align-items-center">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                            <img src="assets/img/star.svg" alt="star icon">
+                        </div>
+                    </div>
+                    <img class="qouto__icon position-absolute" src="assets/img/qoute.png" alt="qoute icon">
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- testimonial area end here -->
+
+   <!-- blog area start here -->
+   <div class="blog__area over overflow-hidden">
+        <div class="container">
+            <h2 class="blog__area--title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">Featured <span>Properties</span></h2>
+            <div class="blog__area--wrapper owl-carousel" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="250">
+                <div class="blog">
+                    <div class="blog__photo overflow-hidden">
+                        <img src="assets/img/blog/blog-1.png" alt="blog thumb" class="blog__photo--img w-100">
+                    </div>
+                    <div class="blog__desc">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="blog__desc--title mb-0">A Modern House Accentuates</h3>
+                            <a href="#" class="sale__btn text-decoration-none d-flex align-items-center justify-content-center">For Sale</a>
+                        </div>
+                        <div class="blog__desc--address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map-marker-radius">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="blog__desc--rating d-flex align-items-center justify-content-between">
+                            <div class="reting__icon d-flex">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                            </div>
+                            <span class="price">$850</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__photo overflow-hidden">
+                        <img src="assets/img/blog/blog-2.png" alt="blog thumb" class="blog__photo--img w-100">
+                    </div>
+                    <div class="blog__desc">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="blog__desc--title mb-0">Capital Hill Residence in New Your</h3>
+                            <a href="#" class="sale__btn text-decoration-none d-flex align-items-center justify-content-center">For Sale</a>
+                        </div>
+                        <div class="blog__desc--address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map-marker-radius">
+                            <span>1758 Lake Floyd Circle, DE 19707</span>
+                        </div>
+                        <div class="blog__desc--rating d-flex align-items-center justify-content-between">
+                            <div class="reting__icon d-flex">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                            </div>
+                            <span class="price">$1,050</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__photo overflow-hidden">
+                        <img src="assets/img/blog/blog-3.png" alt="blog thumb" class="blog__photo--img w-100">
+                    </div>
+                    <div class="blog__desc">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="blog__desc--title mb-0">A Modern House Accentuates</h3>
+                            <a href="#" class="sale__btn text-decoration-none d-flex align-items-center justify-content-center">For Sale</a>
+                        </div>
+                        <div class="blog__desc--address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map-marker-radius">
+                            <span>3994 Jewell Road, MN 55402</span>
+                        </div>
+                        <div class="blog__desc--rating d-flex align-items-center justify-content-between">
+                            <div class="reting__icon d-flex">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                            </div>
+                            <span class="price">$1200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__photo overflow-hidden">
+                        <img src="assets/img/blog/blog-1.png" alt="blog thumb" class="blog__photo--img w-100">
+                    </div>
+                    <div class="blog__desc">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h3 class="blog__desc--title mb-0">A Modern House Accentuates</h3>
+                            <a href="#" class="sale__btn text-decoration-none d-flex align-items-center justify-content-center">For Sale</a>
+                        </div>
+                        <div class="blog__desc--address d-flex align-items-center">
+                            <img src="assets/img/map-marker-radius.svg" alt="map-marker-radius">
+                            <span>4059 Waterview Texico, NM 88135</span>
+                        </div>
+                        <div class="blog__desc--rating d-flex align-items-center justify-content-between">
+                            <div class="reting__icon d-flex">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                                <img src="assets/img/star.svg" alt="star icon">
+                            </div>
+                            <span class="price">$850</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   
+   <!-- blog area end here -->
+
+   <!-- subscribe area start here -->
+   <div class="subscribe__area">
+        <div class="container">
+            <div class="subscribe__area--wrapper position-relative" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="50">
+                <div class="subscribe__desc">
+                    <h2 class="subscribe__desc--title">Subscribe to get the latest news for you!</h2>
+                    <div class="subscribe__desc--input position-relative">
+                        <input type="email" placeholder="Enter your email...">
+                        <button class="border-0 position-absolute" type="submit">Subscribe</button>
+                    </div>
+                </div>
+                <div class="subscribe__thumb position-absolute bottom-0">
+                    <img class="w-100 h-100" src="assets/img/cta-img.png" alt="subscribe thumb">
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- subscribe area end here -->
+
+   <!-- footer area start here -->
+   <footer class="footer__area">
+        <div class="container">
+            <div class="footer__area--wrapper d-flex justify-content-between">
+                <div class="footer__widget">
+                    <a href="#" class="logo">
+                        <img src="assets/img/Homeey-logo-dark.png" alt="site logo">
+                    </a>
+                    <p class="footer__widget--desc mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur a odit aut fugit sed consequuntur magni dolores eos qui ratione.</p>
+                    <div class="footer__social">
+                        <h3 class="footer__social--title">Follow Us</h3>
+                        <div class="footer__social--link d-flex">
+                            <a class="d-flex align-items-center justify-content-center text-decoration-none" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.8 90.7 226.4 209.3 245V327.7h-63V256h63v-54.6c0-62.2 37-96.5 93.7-96.5 27.1 0 55.5 4.8 55.5 4.8v61h-31.3c-30.8 0-40.4 19.1-40.4 38.7V256h68.8l-11 71.7h-57.8V501C413.3 482.4 504 379.8 504 256z"/></svg></a>
+                            <a class="d-flex align-items-center justify-content-center text-decoration-none" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="d-flex align-items-center justify-content-center text-decoration-none" href="#"><i class="fab fa-skype"></i></a>
+                            <a class="d-flex align-items-center justify-content-center text-decoration-none" href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__widget flex-shrink-0">
+                    <h3 class="footer__widget--title">About Us</h3>
+                    <ul class="footer__widget--link p-0">
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>How It works</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Customers</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Our Story</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Career</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Contact Us</span></a></li>
+                        <li><a class="text-decoration-none mb-0" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>FAQs</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer__widget flex-shrink-0">
+                    <h3 class="footer__widget--title">Support & Summary</h3>
+                    <ul class="footer__widget--link p-0">
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Question</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Helping Center</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Privacy & Policy</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Buy or Rent</span></a></li>
+                        <li><a class="text-decoration-none" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Properties</span></a></li>
+                        <li><a class="text-decoration-none mb-0" href="#"><img src="assets/img/pan-right.svg" alt="link icon"><span>Blogs</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer__widget flex-shrink-0">
+                    <h3 class="footer__widget--title">Contact Us</h3>
+                    <ul class="footer__widget--link p-0">
+                        <li class="footer__contact d-flex">
+                            <a href="#" class="footer__contact--icon d-flex align-items-center justify-content-center">
+                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 4.5C16.5 3.675 15.825 3 15 3H3C2.175 3 1.5 3.675 1.5 4.5V13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5ZM15 4.5L9 8.25L3 4.5H15ZM15 13.5H3V6L9 9.75L15 6V13.5Z"></svg>
+                            </a>
+                            <div class="footer__contact--text">
+                                <span class="d-block">E-mail</span>
+                                <a class="text-decoration-none mb-0" href="#">youremailid@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="footer__contact d-flex">
+                            <a href="#" class="footer__contact--icon d-flex align-items-center justify-content-center">
+                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.95 8.1C6 10.2 7.8 11.925 9.9 13.05L11.55 11.4C11.775 11.175 12.075 11.1 12.3 11.25C13.125 11.55 14.025 11.7 15 11.7C15.45 11.7 15.75 12 15.75 12.45V15C15.75 15.45 15.45 15.75 15 15.75C7.95 15.75 2.25 10.05 2.25 3C2.25 2.55 2.625 2.25 3 2.25H5.625C6.075 2.25 6.375 2.55 6.375 3C6.375 3.9 6.525 4.8 6.825 5.7C6.9 5.925 6.825 6.225 6.675 6.45L4.95 8.1ZM10.5 2.25C10.05 2.25 9.75 2.55 9.75 3C9.75 3.45 10.05 3.75 10.5 3.75C10.95 3.75 11.25 3.45 11.25 3C11.25 2.55 10.95 2.25 10.5 2.25ZM12.75 2.25C12.3 2.25 12 2.55 12 3C12 3.45 12.3 3.75 12.75 3.75C13.2 3.75 13.5 3.45 13.5 3C13.5 2.55 13.2 2.25 12.75 2.25ZM15 2.25C14.55 2.25 14.25 2.55 14.25 3C14.25 3.45 14.55 3.75 15 3.75C15.45 3.75 15.75 3.45 15.75 3C15.75 2.55 15.45 2.25 15 2.25ZM10.5 4.5C10.05 4.5 9.75 4.8 9.75 5.25C9.75 5.7 10.05 6 10.5 6C10.95 6 11.25 5.7 11.25 5.25C11.25 4.8 10.95 4.5 10.5 4.5ZM12.75 4.5C12.3 4.5 12 4.8 12 5.25C12 5.7 12.3 6 12.75 6C13.2 6 13.5 5.7 13.5 5.25C13.5 4.8 13.2 4.5 12.75 4.5ZM15 4.5C14.55 4.5 14.25 4.8 14.25 5.25C14.25 5.7 14.55 6 15 6C15.45 6 15.75 5.7 15.75 5.25C15.75 4.8 15.45 4.5 15 4.5ZM10.5 6.75C10.05 6.75 9.75 7.05 9.75 7.5C9.75 7.95 10.05 8.25 10.5 8.25C10.95 8.25 11.25 7.95 11.25 7.5C11.25 7.05 10.95 6.75 10.5 6.75ZM12.75 6.75C12.3 6.75 12 7.05 12 7.5C12 7.95 12.3 8.25 12.75 8.25C13.2 8.25 13.5 7.95 13.5 7.5C13.5 7.05 13.2 6.75 12.75 6.75ZM15 6.75C14.55 6.75 14.25 7.05 14.25 7.5C14.25 7.95 14.55 8.25 15 8.25C15.45 8.25 15.75 7.95 15.75 7.5C15.75 7.05 15.45 6.75 15 6.75Z">
+                                </svg>
+                            </a>
+                            <div class="footer__contact--text">
+                                <span class="d-block">Contact</span>
+                                <a class="text-decoration-none mb-0" href="#">(+01) 123 456 7890</a>
+                            </div>
+                        </li>
+                        <li class="footer__contact d-flex mb-0">
+                            <a href="#" class="footer__contact--icon d-flex align-items-center justify-content-center">
+                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 3C10.65 3 12 4.35 12 6C12 7.575 10.425 10.125 9 11.925C7.575 10.05 6 7.575 6 6C6 4.35 7.35 3 9 3ZM9 1.5C6.525 1.5 4.5 3.525 4.5 6C4.5 9.375 9 14.25 9 14.25C9 14.25 13.5 9.3 13.5 6C13.5 3.525 11.475 1.5 9 1.5ZM9 4.5C8.175 4.5 7.5 5.175 7.5 6C7.5 6.825 8.175 7.5 9 7.5C9.825 7.5 10.5 6.825 10.5 6C10.5 5.175 9.825 4.5 9 4.5ZM15 14.25C15 15.9 12.3 17.25 9 17.25C5.7 17.25 3 15.9 3 14.25C3 13.275 3.9 12.45 5.325 11.85L5.775 12.525C5.025 12.9 4.5 13.35 4.5 13.875C4.5 14.925 6.525 15.75 9 15.75C11.475 15.75 13.5 14.925 13.5 13.875C13.5 13.35 12.975 12.9 12.15 12.525L12.6 11.85C14.1 12.45 15 13.275 15 14.25Z">
+                                  </svg>
+                            </a>
+                            <div class="footer__contact--text">
+                                <span class="d-block">Location</span>
+                                <a class="text-decoration-none mb-0" href="#">3012 Pine Garden Lane Atlanta, <br> Boulevard, GA 30328</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright d-flex align-items-center justify-content-between flex-column flex-md-row">
+                <p class="copyright__text mb-0">Copyright © 2022 Anity Design. Crafted with ❤️</p>
+                <a class="copyright__policy text-decoration-none" href="#">Term Condition & Policy</a>
+            </div>
+        </div>
+   </footer>
+   <!-- footer area end here -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

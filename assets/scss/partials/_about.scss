@@ -1,0 +1,393 @@
+.about__area {
+    padding: 140px 0px 80px 0px;
+    background: #0E1420;
+    &--title {
+        @include section__title;
+        margin-bottom: 60px;
+    }
+    .about__widget {
+        .single__widget {
+            padding-bottom: 146px;
+            &--thumb {
+                padding: 30px 30px 0px 0px;
+                .thumb__photo {
+                    width: 536px;
+                    height: 586px;
+                    &--img {
+                        filter: drop-shadow(0px 15px 20px rgba(169, 182, 201, 0.15));
+                        border-radius: 6px;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: -30px;
+                        right: -30px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: transparent;
+                        border-radius: 6px;
+                        border: 1px solid rgba(255, 255, 255, 0.20); 
+                        z-index: -1;
+                    }
+                }
+                
+                .circle__effect {
+                    bottom: -90px;
+                    left: -90px;
+                    z-index: -1;                  
+                }
+            }
+            &--desc {
+                padding-left: 106px;
+                padding-top: 26px;
+            }
+            &--title {
+                @include section__title__lg;
+                margin-bottom: 25px;
+            }
+            &--text {
+                @include para__style;
+                margin-bottom: 20px;
+            }
+            &--question {
+                gap: 15px;
+                width: 536px;
+                padding-top: 10px;
+                .accordion-item {
+                    border: 0 !important;
+                    background: transparent;
+                    .accordion-button {
+                        background: transparent;
+                        color: #A1A9B2;
+                        border: 0 !important; 
+                        box-shadow: none;
+                        padding: 9px 0px 0px;
+                        font-size: 17px;
+                        line-height: normal;
+                        &:focus {
+                            border: 0 !important;
+                            box-shadow: none;
+                        }
+                        &::after {
+                            background-image: none;
+                            content: '\f107';
+                            font-family: 'Font Awesome 5 pro';
+                            height: 22px;
+                            width: 22px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                        }
+                    }
+                    .accordion-button:not(.collapsed){
+                        color: #E2E7EE;
+                        &::after {
+                            color: #E2E7EE;
+                        }
+                    }
+                    .accordion-body {
+                        padding: 15px 48px 0px 0px;
+                        color: #A9B3C0;
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+                }
+                .single__question {
+                    padding: 20px;
+                    border-radius: 4px;
+                    border: 1px solid #2E3844;
+                    gap: 20px;
+                    .check__circle {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50px;
+                        background: rgba(18, 82, 174, 0.15);
+                    }
+                }
+                
+            }
+        }
+        .about__deal {
+            padding-bottom: 100px;
+            .single__widget--desc {
+                padding-right: 150px;
+                padding-top: 72px;
+                .about__deal--list {
+                    margin-bottom: 47px;
+                    gap: 14px;
+                    .list__item {
+                        gap: 12px;
+                        color: #E2E7EE;
+                        font-size: 15px;
+                        .list__icon {
+                            color: $primary__color !important;
+                        }
+                    }
+                }
+                .about__desc--btn {
+                    border-radius: 4px;
+                    background: $primary__color;
+                    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+                    color: #fff;
+                    padding: 8px 20px;
+                    transition: all .3s;
+                    &:hover {
+                        background-color: $secondary__color;
+                        color: $primary__color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .about__area {
+        .about__widget {
+            .single__widget {
+                &--thumb {
+                    .thumb__photo {
+                        width: 450px;
+                        height: auto;
+                    }
+                    .circle__effect {
+                        bottom: -30px;
+                        left: -70px;
+                        width: 150px;
+                    }
+                }
+                &--desc {
+                    padding-left: 70px;
+                }
+                &--title{
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                }
+                &--text {
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+                &--question {
+                    gap: 10px;
+                    padding-top: 0px;
+                }
+            }
+            .about__deal {
+                padding-bottom: 65px;
+                .single__widget--desc {
+                    padding-right: 100px;
+                }
+                .about__deal--list {
+                    margin-bottom: 30px !important;
+                    gap: 10px !important;
+                    .list__item {
+                        font-size: 13px !important;
+                    }
+                }
+                .single__widget--thumb {
+                    .circle__effect {
+                        bottom: -60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about__area {
+        padding: 90px 0px 80px 0px;
+        .about__widget {
+            .single__widget {
+                padding-bottom: 100px;
+                &--thumb {
+                    padding: 20px 20px 0px 0px;
+                    .thumb__photo {
+                        width: 350px;
+                        height: 100%;
+                        &::after {
+                            top: -20px;
+                            right: -20px;
+                        }
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .circle__effect {
+                        bottom: -55px;
+                        left: -55px;
+                        width: 120px;
+                    }
+                }
+                &--desc {
+                    padding-left: 50px;
+                }
+                &--title{
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+                &--text {
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+                &--question {
+                    gap: 10px;
+                    padding-top: 0px;
+                    width: 100%;
+                    .single__question {
+                        padding: 12px;
+                        gap: 15px;
+                    }
+                }
+            }
+            .about__deal {
+                padding-bottom: 65px;
+                .single__widget--desc {
+                    padding-right: 100px;
+                }
+                .about__deal--list {
+                    margin-bottom: 30px !important;
+                    gap: 10px !important;
+                    .list__item {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about__area {
+        padding: 90px 0px 80px 0px;
+        .about__widget {
+            .single__widget {
+                align-items: center;
+                gap: 90px;
+                padding-bottom: 0;
+                &--thumb {
+                    .thumb__photo {
+                        width: 500px;
+                        height: 520px;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+                &--desc {
+                    padding-left: 0px;
+                }
+                &--title{
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+                &--text {
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+                &--question {
+                    gap: 10px;
+                    padding-top: 0px;
+                    width: 100%;
+                    .single__question {
+                        padding: 12px;
+                        gap: 15px;
+                    }
+                }
+            }
+            .about__deal {
+                padding-bottom: 65px;
+                .single__widget--desc {
+                    padding-right: 0px;
+                    padding-top: 50px;
+                }
+                .about__deal--list {
+                    margin-bottom: 30px !important;
+                    gap: 10px !important;
+                    .list__item {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .about__area {
+        padding: 50px 0px 80px 0px;
+        &--title {
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+        .about__widget {
+            .single__widget {
+                align-items: center;
+                gap: 90px;
+                padding-bottom: 0;
+                &--thumb {
+                    padding: 20px 20px 0px 0px;
+                    .thumb__photo {
+                        width: 320px;
+                        height: auto;
+                        img {
+                            height: 100%;
+                        }
+                        &::after {
+                            top: -20px;
+                            right: -20px;
+                        }
+                    }
+                    .circle__effect {
+                        bottom: -50px;
+                        left: -51px;
+                        z-index: -1;
+                        width: 100px;
+                    }
+                }
+                &--desc {
+                    padding-left: 0px;
+                }
+                &--title{
+                    font-size: 25px;
+                    margin-bottom: 15px;
+                }
+                &--text {
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+                &--question {
+                    gap: 10px;
+                    padding-top: 0px;
+                    width: 100%;
+                    .single__question {
+                        padding: 12px;
+                        gap: 15px;
+                        .check__circle {
+                            height: 30px;
+                            width: 30px;
+                            &--icon {
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .about__deal {
+                padding-bottom: 65px;
+                .single__widget--desc {
+                    padding-right: 0px;
+                    padding-top: 50px;
+                }
+                .about__deal--list {
+                    margin-bottom: 30px !important;
+                    gap: 10px !important;
+                    .list__item {
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+}

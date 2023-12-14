@@ -1,0 +1,106 @@
+.menu__area {
+    padding: 25px 0px 45px 0px;
+    background: #0E1420;
+    .menu__wrapper {
+        .menu {
+            gap: 46px;
+            &__link {
+                color: #ABB6C5; 
+                font-size: 20px;
+                padding-bottom: 5px;
+                transition: all .3s;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 2px;
+                    width: 0%;
+                    height: 1px;
+                    background-image: url('../img/bottom-border.svg');
+                    transition: all .3s;
+                }
+                &:hover {
+                    color: #fff;
+                }
+                &:hover::after {
+                    width: 51px;
+                }
+            }
+        }
+        .menu__btn {
+            gap: 23px;
+            &--link {
+                font-size: 20px;
+                transition: all .3s;
+            }
+            &--signin {
+                color: #ABB6C5; 
+                &:hover {
+                    color: #fff;
+                }
+            }
+            &--signup {
+                @include theme__btn;
+                font-size: 20px;
+                color: $primary__color;
+                background: rgba(18, 82, 174, 0.15);
+                box-shadow: 0px 2px 3px 0px rgba(18, 82, 174, 0.40);
+                &:hover {
+                    color: #fff;
+                    background-color: $primary__color;
+                }
+            }
+        }
+        .offcanvas {
+            background: #0E1420;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menu__area {
+        .menu__wrapper {
+            .menu {
+                gap: 30px;
+                &__link {
+                    font-size: 17px;
+                    &:hover::after {
+                        width: 40px;
+                    }
+                }
+            }
+            .menu__btn {
+                &--link { 
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .menu__area {
+        .menu__wrapper {
+            .menu {
+                gap: 15px;
+                text-align: center;
+                padding: 30px 0px;
+            }
+            .menu__btn {
+                gap: 15px;
+                &--link {
+                    text-align: center;
+                }
+            }
+            .menu__open {
+                font-size: 25px;
+                color: $secondary__color;
+                transition: all .3s;
+                &:hover {
+                    color: $primary__color;
+                }
+            }
+        }
+    }
+}
+
